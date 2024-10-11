@@ -9,7 +9,7 @@ dlblue = '#0096ff'; dlorange = '#FF9300'; dldarkred='#C00000'; dlmagenta='#FF40F
 plt.style.use('./style.mplstyle')
 
 def load_house_data():
-    data = np.loadtxt("data/houses.txt", delimiter=',', skiprows=1)
+    data = np.loadtxt("houses.txt", delimiter=',', skiprows=1)
     X = data[:,:4]
     y = data[:,4]
     return X, y
